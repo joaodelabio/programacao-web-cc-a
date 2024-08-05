@@ -1,3 +1,17 @@
-h1 {
-    color:crimson
+#title {
+    color:chocolate;
+    text-align:center;
+}
+
+.forms {
+    border: 1px solid;
+    text-align: center;
+}
+
+.button {
+    text-align: right;
+}
+
+.creditos{
+    text-align: center;
 }
