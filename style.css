@@ -1,16 +1,65 @@
-#title {
-    color:chocolate;
-    text-align:center;
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
+/* Título */
+#title {
+    color: #4a90e2;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Formulário */
 .forms {
     text-align: center;
+    margin: 20px 0;
 }
 
+.forms input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Botão */
 .button {
     text-align: center;
 }
 
-.creditos{
+.button button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button button:hover {
+    background-color: #357abd;
+}
+
+/* Créditos */
+.creditos {
     text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
 }
