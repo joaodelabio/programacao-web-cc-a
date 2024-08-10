@@ -6,11 +6,20 @@ body {
 }
 
 #title {
-    color: #4a90e2;
+    color: #ff0000;
     text-align: center;
     margin-top: 20px;
     font-size: 2.5em;
     font-weight: bold;
+}
+
+.form-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .forms {
@@ -29,7 +38,7 @@ body {
 }
 
 .forms input:focus {
-    border-color: #4a90e2;
+    border-color: #000000;
     outline: none;
 }
 
@@ -38,7 +47,7 @@ body {
 }
 
 .button button {
-    background-color: #4a90e2;
+    background-color: #e24a4a;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -49,7 +58,7 @@ body {
 }
 
 .button button:hover {
-    background-color: #357abd;
+    background-color: #f57f7f;
 }
 
 .creditos {
