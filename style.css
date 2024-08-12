@@ -34,7 +34,6 @@ body {
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
-    transition: border-color 0.3s;
 }
 
 .forms input:focus {
@@ -54,7 +53,6 @@ body {
     border-radius: 5px;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .button button:hover {
@@ -63,7 +61,8 @@ body {
 
 .creditos {
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
+    margin-top: auto;
     color: #666;
+    width: 100%;
+    position: fixed;
 }
