@@ -1,51 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #title {
     color: #ff0000;
     text-align: center;
-    margin-top: 20px;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
-}
-
-.form-box {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 400px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .forms {
-    text-align: center;
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .forms input {
-    width: 80%;
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
 }
 
-.forms input:focus {
-    border-color: #000000;
-    outline: none;
-}
-
-.button {
-    text-align: center;
-}
-
-.button button {
+#button {
     background-color: #e24a4a;
     color: white;
     padding: 10px 20px;
@@ -55,14 +46,12 @@ body {
     cursor: pointer;
 }
 
-.button button:hover {
-    background-color: #f57f7f;
-}
-
-.creditos {
-    text-align: center;
-    margin-top: auto;
-    color: #666;
-    width: 100%;
+footer {
     position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    color: #666;
 }
