@@ -11,7 +11,7 @@ form.addEventListener('submit', function (event) {
             alert("campo vazio.");
             return false;
         }
-        const regex = /^[A-Za-z\s]+$/;
+        const regex = /^[A-Za-z\s]/;
         if (!regex.test(nome)) {
             alert("o nome não pode conter números ou caracteres especiais.");
             return false;
