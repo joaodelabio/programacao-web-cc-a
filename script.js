@@ -3,6 +3,7 @@ const form = document.querySelector('.forms');
 form.addEventListener('submit', function (event) {
     
     const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
     const idade = document.getElementById('idade').value;
     const cpf = document.getElementById('cpf').value;
 
@@ -17,6 +18,17 @@ form.addEventListener('submit', function (event) {
             return false;
         }
         return true;
+    }
+
+    function validarEmail(email) {
+        if (email === "") {
+            alert("campo email vazio.");
+            return false;
+        }
+        if (/^[\w]+@[\w]+.[a-zA-Z]+$/.test(email)) {
+            return true
+        }
+
     }
 
     function validarIdade(idade) {
@@ -46,11 +58,13 @@ form.addEventListener('submit', function (event) {
     }
 
     if (!validarNome(nome)) return;
+    if (!validarEmail(email)) return;
     if (!validarIdade(idade)) return;
     if (!validarCPF(cpf)) return;
 
     const formData = {
         nome: nome,
+        email: email,
         idade: idade,
         cpf: cpf,
     };
